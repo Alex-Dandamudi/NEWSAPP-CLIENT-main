@@ -1,0 +1,75 @@
+{
+  "name": "newsapp",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://AkashMannava.github.io/NEWSAPP-CLIENT",
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mantine/carousel": "^7.2.2",
+    "@mantine/core": "^7.2.2",
+    "@mantine/dates": "^7.2.2",
+    "@mantine/dropzone": "^7.2.2",
+    "@mantine/form": "^7.2.2",
+    "@mantine/hooks": "^7.2.2",
+    "@mantine/modals": "^7.2.2",
+    "@mantine/notifications": "^7.2.2",
+    "@mantine/nprogress": "^7.2.2",
+    "@mantine/prism": "^6.0.21",
+    "@mantine/spotlight": "^7.2.2",
+    "@mantine/tiptap": "^7.2.2",
+    "@mui/material": "^5.14.18",
+    "@mui/styles": "^5.14.18",
+    "@tabler/icons": "^1.119.0",
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.5.1",
+    "@tiptap/extension-link": "^2.1.12",
+    "@tiptap/react": "^2.1.12",
+    "@tiptap/starter-kit": "^2.1.12",
+    "axios": "^1.6.2",
+    "dayjs": "^1.11.10",
+    "embla-carousel-react": "^8.0.0-rc14",
+    "localforage": "^1.10.0",
+    "mongoose": "^8.0.1",
+    "nth-check": "^2.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-router-dom": "^6.18.0",
+    "react-scripts": "5.0.1",
+    "react-top-loading-bar": "^2.3.1",
+    "semver": "^7.5.4",
+    "tabler-icons-react": "^1.56.0",
+    "web-vitals": "^3.5.0"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
+  }
+}

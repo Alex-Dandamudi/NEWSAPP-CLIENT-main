@@ -1,0 +1,60 @@
+.home{
+  position: absolute;
+  top: 50px;
+  background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(bg.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 93vh;
+  z-index: -500;
+  
+}
+.text_box{
+  position: absolute;
+  top: 57%;
+  left: 5%;
+}
+.text_box>h1{
+  color: white;
+  font-size: 100px;
+  
+}
+.text_box>h1:hover{
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+  
+}
+.text_box>p{
+  color: white;
+  margin: 15px 0;
+}
+.text_box>div.btn_container>.register,.login{
+  text-decoration: none;
+  color: black;
+  background-color: rgba(255,255,255,0.9);
+  padding: 10px 15px;
+  display: inline-block;
+  
+  font-weight: 600;
+  border: 1px solid #61dafb;
+  box-shadow: 1px 1px 1px white;
+}
+.login{
+  margin-left: 50px;
+}
+@media screen and (max-width:700px) {
+  .text_box{
+    top: 34%;
+  }
+  .text_box>h1{
+    font-size: 34px;
+  }
+  .text_box>p{
+    font-size: 15px;
+  }
+}
+@media screen and (min-width:700px) and (max-width:850px) {
+  .text_box>h1{
+    font-size: 50px;
+  }
+}
