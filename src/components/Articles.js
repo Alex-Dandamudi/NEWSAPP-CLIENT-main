@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios'; // Install Axios library
+import axios from 'axios';
 import styles from './articles.module.css';
-
-const mongoose = require('mongoose');
 
 
 const Articles = () => {
@@ -30,13 +28,11 @@ const Articles = () => {
     // Retrieve the userId string from LocalStorage
   
     if (isLoggedIn && titleInput && summaryInput && stringUserId) {
-      // Convert the userId string to ObjectId
-      const userId = new mongoose.Types.ObjectId(stringUserId);
-  
+      // Send the userId string directly; backend should handle type
       const formData = new FormData();
       formData.append('title', titleInput);
       formData.append('summary', summaryInput);
-      formData.append('userId', userId);
+      formData.append('userId', stringUserId);
       formData.append('file', file);
 
       try {

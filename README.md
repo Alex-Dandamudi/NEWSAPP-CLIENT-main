@@ -2,6 +2,46 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Project setup and run
+
+1) Install dependencies
+
+```bash
+npm install
+```
+
+2) Create an env file with your NewsAPI key
+
+Create a file named `.env` in the project root with:
+
+```
+REACT_APP_NEWS_API=your_newsapi_key_here
+```
+
+You can get a key from `https://newsapi.org`.
+
+3) Start the development server
+
+```bash
+npm start
+```
+
+The app will be available at `http://localhost:3000`.
+
+4) Optional: Backend for Articles
+
+Some features (Login, Registration, Articles upload/list/delete, Logout) expect an API server at `http://localhost:4000` with the following endpoints:
+
+- `POST /api/register`
+- `POST /api/login` (returns `{ token, userId }`)
+- `POST /api/article` (multipart form: `title`, `summary`, `userId`, `file`)
+- `GET /api/articles/:userId`
+- `DELETE /api/article/:articleId`
+- `DELETE /api/file/:filePath`
+- `POST /api/logout`
+
+If you do not have this backend running, those features will not work; the news browsing routes will still function with a valid `REACT_APP_NEWS_API` key.
+
 ## Available Scripts
 
 In the project directory, you can run:

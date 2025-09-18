@@ -25,29 +25,10 @@ const App = () => {
         <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
-        {/* <Route path='/Logout' element={<Login />} /> */}
         <Route path='/Articles' element={<Articles />} />
         <Route path='/registration' element={<Registration />} />
         <Route path='/reset_pwd_email' element={<ResetPasswordEmail />} />
-        
-          <Route
-            exact
-            path="/general"
-            element={
-              <News
-                mode={mode}
-                setMode={setMode}
-                setProgress={setProgress}
-                apiKey={apiKey}
-                key=""
-                pageSize={pageSize}
-                country="in"
-                category="general"
-              />
-            }
-          >
-            {" "}
-          </Route>
+          
           <Route
             exact
             path="/business"
